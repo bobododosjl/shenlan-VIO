@@ -11,6 +11,7 @@
 # 3,使用allan方差工具Kalibr_allan-master工具标定生成Allen方差标定曲线
 
  利用2生成的imu.bag进行阿伦方差分析
+
 （1）利用bagconvert转换成mat形式
 
 （2）使用脚本对mat文件进行分析（耗时）

@@ -14,6 +14,6 @@
 
 （1）利用bagconvert转换成mat形式
 
-（2）使用脚本对mat文件进行分析（耗时）
+（2）使用脚本script_allan_matparallel.m对mat文件进行分析（耗时）
 
-（3）使用脚本画allan方差曲线
+（3）使用脚本script_process_results画allan方差曲线

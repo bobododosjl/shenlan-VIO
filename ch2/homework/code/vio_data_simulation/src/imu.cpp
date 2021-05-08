@@ -148,18 +148,18 @@ void IMU::testImu(std::string src, std::string dist)
         dq.normalize();
         
         /// imu 动力学模型 欧拉积分
-        ///Eigen::Vector3d acc_w = Qwb * (imupose.imu_acc-imupose.imu_acc_bias) + gw;  // aw = Rwb * ( acc_body - acc_bias ) + gw
-        ///Qwb = Qwb * dq;
-        ///Pwb = Pwb + Vw * dt + 0.5 * dt * dt * acc_w;
-        ///Vw = Vw + acc_w * dt;
-        
-        /// 中值积分
-        Eigen::Vector3d acc_w = Qwb * (imupose_mean.imu_acc-imupose_mean.imu_acc_bias) + gw;
+        Eigen::Vector3d acc_w = Qwb * (imupose_pre.imu_acc-imupose_pre.imu_acc_bias) + gw;  // aw = Rwb * ( acc_body - acc_bias ) + gw
         Qwb = Qwb * dq;
-        Eigen::Vector3d acc_w1 = Qwb * (imupose_now.imu_acc-imupose_now.imu_acc_bias) + gw;
-        acc_w = (acc_w + acc_w1) / 2.0;
         Pwb = Pwb + Vw * dt + 0.5 * dt * dt * acc_w;
         Vw = Vw + acc_w * dt;
+        
+        /// 中值积分
+        ///Eigen::Vector3d acc_w = Qwb * (imupose_mean.imu_acc-imupose_mean.imu_acc_bias) + gw;
+        ///Qwb = Qwb * dq;
+        ///Eigen::Vector3d acc_w1 = Qwb * (imupose_now.imu_acc-imupose_now.imu_acc_bias) + gw;
+        ///acc_w = (acc_w + acc_w1) / 2.0;
+        ///Pwb = Pwb + Vw * dt + 0.5 * dt * dt * acc_w;
+        ///Vw = Vw + acc_w * dt;
         //　按着imu postion, imu quaternion , cam postion, cam quaternion 的格式存储，由于没有cam，所以imu存了两次
         save_points<<imupose_now.timestamp<<" "
                    <<Qwb.w()<<" "

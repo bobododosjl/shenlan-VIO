@@ -48,25 +48,8 @@ b.第二组参数：
 *a.欧拉法：*
 
 使用欧拉法，即两个相邻时刻k到k+1的位姿是用第k时刻的测量值a,w来计算：
-$$
-\mathbf{p}_{w b_{k+1}}=\mathbf{p}_{w b_{k}}+\mathbf{v}_{k}^{w} \Delta t+\frac{1}{2} \mathbf{a} \Delta t^{2}
-$$
 
-$$
-\mathbf{v}_{k+1}^{w}=\mathbf{v}_{k}^{w}+\mathbf{a} \Delta t
-$$
-
-$$
-\mathbf{q}_{w b_{k+1}}=\mathbf{q}_{w b_{k}} \otimes\left[\begin{array}{c}1 \\ \frac{1}{2} \boldsymbol{\omega} \delta t\end{array}\right]
-$$
-
-$$
-其中，\mathbf{a}=\mathbf{q}_{w b_{k}}\left(\mathbf{a}^{b_{k}}-\mathbf{b}_{k}^{a}\right)-\mathbf{g}^{w}
-$$
-
-$$
-\boldsymbol{\omega}=\boldsymbol{\omega}^{b_{k}}-\mathbf{b}_{k}^{g}
-$$
+![image-20210508161201590](../images/image-20210508161201590.png)
 
 ![image-20210508160627382](../images/image-20210508160627382.png)
 
@@ -75,25 +58,8 @@ $$
 *b.中值法：*
 
 这里考虑使用中值法来代替欧拉法，实际上k+1时刻的陀螺仪和加速计的测量值未知，所以考虑用k-1时刻和k时刻的陀螺仪和加速度计测量值的平均值来计算。
-$$
-\mathbf{p}_{w b_{k+1}}=\mathbf{p}_{w b_{k}}+\mathbf{v}_{k}^{w} \Delta t+\frac{1}{2} \mathbf{a} \Delta t^{2}
-$$
 
-$$
-\mathbf{v}_{k+1}^{w}=\mathbf{v}_{k}^{w}+\mathbf{a} \Delta t
-$$
-
-$$
-\mathbf{q}_{w b_{k+1}}=\mathbf{q}_{w b_{k}} \otimes\left[\begin{array}{c}1 \\ \frac{1}{2} \boldsymbol{\omega} \delta t\end{array}\right]
-$$
-
-$$
-其中，\mathbf{a}=\frac{1}{2}\left[\mathbf{q}_{w b_{k}}\left(\mathbf{a}^{b_{k}}-\mathbf{b}_{k}^{a}\right)-\mathbf{g}^{w}+\mathbf{q}_{w b_{k-1}}\left(\mathbf{a}^{b_{k-1}}-\mathbf{b}_{k}^{a}\right)-\mathbf{g}^{w}\right]
-$$
-
-$$
-\boldsymbol{\omega}=\frac{1}{2}\left[\left(\boldsymbol{\omega}^{b_{k}}-\mathbf{b}_{k}^{g}\right)+\left(\boldsymbol{\omega}^{b_{k-1}}-\mathbf{b}_{k}^{g}\right)\right]
-$$
+![image-20210508161246443](../images/image-20210508161246443.png)
 
 ![image-20210508160756641](../images/image-20210508160756641.png)
 

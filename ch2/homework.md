@@ -1,6 +1,6 @@
 ## 作业：
 
-![image-20210424094728266](/home/bobododo/.config/Typora/typora-user-images/image-20210424094728266.png)
+![image-20210508155655344](../images/image-20210508155655344.png)
 
 ## *1，基础作业：*
 
@@ -10,17 +10,17 @@ a.第一组参数：
 
 |          参数          | 设定值  | kalibr-Allan标定结果 |                             单位                             |
 | :--------------------: | :-----: | :------------------: | :----------------------------------------------------------: |
-|   White Noise(gyro)    |  1e-02  |       1.01e-02       | ![image-20210424103105637](/home/bobododo/.config/Typora/typora-user-images/image-20210424103105637.png) |
-| Bias Instability(gyro) |  7e-03  |      7.044e-03       | ![image-20210424103139119](/home/bobododo/.config/Typora/typora-user-images/image-20210424103139119.png) |
-|    White Noise(acc)    | 1.2e-02 |      1.216e-02       | ![image-20210424103323122](/home/bobododo/.config/Typora/typora-user-images/image-20210424103323122.png) |
-| Bias Instability(acc)  |  8e-03  |      6.675e-03       | ![image-20210424103557492](/home/bobododo/.config/Typora/typora-user-images/image-20210424103557492.png) |
+|   White Noise(gyro)    |  1e-02  |       1.01e-02       | ![image-20210508155728557](../images/image-20210508155728557.png) |
+| Bias Instability(gyro) |  7e-03  |      7.044e-03       | ![image-20210508155758509](../images/image-20210508155758509.png) |
+|    White Noise(acc)    | 1.2e-02 |      1.216e-02       | ![image-20210508155826135](../images/image-20210508155826135.png) |
+| Bias Instability(acc)  |  8e-03  |      6.675e-03       | ![image-20210508155847609](../images/image-20210508155847609.png) |
 
 陀螺仪的Allan方差曲线如下图：
 
-![image-20210424103902430](/home/bobododo/.config/Typora/typora-user-images/image-20210424103902430.png)
+![image-20210508160137995](../images/image-20210508160137995.png)
 
 加速度计的Allan方差曲线如下图：
-![image-20210424104002613](/home/bobododo/.config/Typora/typora-user-images/image-20210424104002613.png)
+![image-20210508160216856](../images/image-20210508160216856.png)
 
 由Allan方差分析结果可得，陀螺仪和加速度计的白噪声和零偏不稳定性噪声估计值与实际设定的值相差不大。
 
@@ -28,18 +28,18 @@ b.第二组参数：
 
 |          参数          | 设定值  | kalibr-Allan标定结果 |                             单位                             |
 | :--------------------: | :-----: | :------------------: | :----------------------------------------------------------: |
-|   White Noise(gyro)    | 1.5e-04 |      1.517e-04       | ![image-20210424103105637](/home/bobododo/.config/Typora/typora-user-images/image-20210424103105637.png) |
-| Bias Instability(gyro) |  7e-06  |       6.25e-06       | ![image-20210424103139119](/home/bobododo/.config/Typora/typora-user-images/image-20210424103139119.png) |
-|    White Noise(acc)    | 1.9e-04 |      1.928e-04       | ![image-20210424103323122](/home/bobododo/.config/Typora/typora-user-images/image-20210424103323122.png) |
-| Bias Instability(acc)  |  7e-06  |       7.54e-06       | ![image-20210424103557492](/home/bobododo/.config/Typora/typora-user-images/image-20210424103557492.png) |
+|   White Noise(gyro)    | 1.5e-04 |      1.517e-04       | ![image-20210508160339061](../images/image-20210508160339061.png) |
+| Bias Instability(gyro) |  7e-06  |       6.25e-06       | ![image-20210508160400063](../images/image-20210508160400063.png) |
+|    White Noise(acc)    | 1.9e-04 |      1.928e-04       | ![image-20210508160424198](../images/image-20210508160424198.png) |
+| Bias Instability(acc)  |  7e-06  |       7.54e-06       | ![image-20210508160439123](../images/image-20210508160439123.png) |
 
 陀螺仪的Allan方差曲线如下图：
 
-![image-20210424105359500](/home/bobododo/.config/Typora/typora-user-images/image-20210424105359500.png)
+![image-20210508160503480](../images/image-20210508160503480.png)
 
 加速度计的Allan方差曲线如下图：
 
-![image-20210424105616419](/home/bobododo/.config/Typora/typora-user-images/image-20210424105616419.png)
+![image-20210508160551798](../images/image-20210508160551798.png)
 
 由第二组参数可知，提高了陀螺仪和加速度计的精度，陀螺仪和加速度计的白噪声估计精度相对较高，零偏不稳定性噪声估计值和实际设定值有一些差别。
 
@@ -68,9 +68,9 @@ $$
 \boldsymbol{\omega}=\boldsymbol{\omega}^{b_{k}}-\mathbf{b}_{k}^{g}
 $$
 
-![image-20210424212439747](/home/bobododo/.config/Typora/typora-user-images/image-20210424212439747.png)
+![image-20210508160627382](../images/image-20210508160627382.png)
 
-![image-20210424212501430](/home/bobododo/.config/Typora/typora-user-images/image-20210424212501430.png)
+![image-20210508160739846](../images/image-20210508160739846.png)
 
 *b.中值法：*
 
@@ -95,9 +95,9 @@ $$
 \boldsymbol{\omega}=\frac{1}{2}\left[\left(\boldsymbol{\omega}^{b_{k}}-\mathbf{b}_{k}^{g}\right)+\left(\boldsymbol{\omega}^{b_{k-1}}-\mathbf{b}_{k}^{g}\right)\right]
 $$
 
-![image-20210424211838559](/home/bobododo/.config/Typora/typora-user-images/image-20210424211838559.png)
+![image-20210508160756641](../images/image-20210508160756641.png)
 
-![image-20210424211752067](/home/bobododo/.config/Typora/typora-user-images/image-20210424211752067.png)
+![image-20210508160819582](../images/image-20210508160819582.png)
 
 结果分析：
 

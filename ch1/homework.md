@@ -2,9 +2,9 @@
 
 ![image-20210508153616897](../images/image-20210508153616897.png)
 
-![image-20210423204808023](/home/bobododo/.config/Typora/typora-user-images/image-20210423204808023.png)
+![image-20210508154754881](../images/image-20210508154754881.png)
 
-![image-20210423204829273](/home/bobododo/.config/Typora/typora-user-images/image-20210423204829273.png)
+![image-20210508154836213](../images/image-20210508154836213.png)
 
 ## *1，VIO文献阅读：*
 
@@ -20,14 +20,14 @@
 
 运行结果：
 
-![image-20210423205351719](/home/bobododo/.config/Typora/typora-user-images/image-20210423205351719.png)
+![image-20210508154909697](../images/image-20210508154909697.png)
 
 ## *3，其他导数：*
 
 (1)
 
-![image-20210423213902363](/home/bobododo/.config/Typora/typora-user-images/image-20210423213902363.png)
+![image-20210508154931609](../images/image-20210508154931609.png)
 
 (2)
 
-![image-20210423213938197](/home/bobododo/.config/Typora/typora-user-images/image-20210423213938197.png)
+![image-20210508155011790](../images/image-20210508155011790.png)

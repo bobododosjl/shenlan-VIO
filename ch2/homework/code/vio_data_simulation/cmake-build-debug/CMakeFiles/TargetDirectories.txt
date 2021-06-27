@@ -1,3 +1,0 @@
-/home/bobododo/GNC/SLAM/shenlan/VIO/Shenlan-VIO/ch2/homework/code/vio_data_simulation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/bobododo/GNC/SLAM/shenlan/VIO/Shenlan-VIO/ch2/homework/code/vio_data_simulation/cmake-build-debug/CMakeFiles/data_gen.dir
-/home/bobododo/GNC/SLAM/shenlan/VIO/Shenlan-VIO/ch2/homework/code/vio_data_simulation/cmake-build-debug/CMakeFiles/edit_cache.dir

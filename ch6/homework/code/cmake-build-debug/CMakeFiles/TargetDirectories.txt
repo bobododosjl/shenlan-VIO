@@ -1,3 +1,0 @@
-/home/sjl/GNC/GIT/Shenlan-VIO/ch6/homework/code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/sjl/GNC/GIT/Shenlan-VIO/ch6/homework/code/cmake-build-debug/CMakeFiles/estimate_depth.dir
-/home/sjl/GNC/GIT/Shenlan-VIO/ch6/homework/code/cmake-build-debug/CMakeFiles/edit_cache.dir
